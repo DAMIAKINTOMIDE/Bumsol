@@ -1,0 +1,724 @@
+   *{
+	box-sizing:border-box;
+}
+
+   body{
+   	margin: 0;/*#B8D2B7*/
+   	background: #f4eeeb;
+   }
+
+   a{
+   	text-decoration: none;
+
+   }
+
+   /*HEADER*/
+.header{
+	width: 100%;
+	height: 130px;
+	background-color: #930F12 ; /*7c1818*/
+	padding:3px 0 0 0;
+	/*border-bottom:  solid #e7e7e7 0.7px;*/
+	/*background: rgba(56,27,11,0.5);*/
+}
+
+.header h2{
+	color: #ffffff;
+}
+/*7c1818*/
+.logo{
+	float:left;
+}
+
+.menu{
+	width: 100%;
+	height: auto;
+	max-width: 1200px;
+	margin: 0 auto 0 auto; /*top right bottom left*/
+	/*float: left;*/
+}
+
+.container{
+	width: 100%;
+	height: -webkit-fill-available;
+	overflow: auto;
+	max-width: 1200px;
+	margin: 0 auto 0 auto; /*top right bottom left*/
+	padding: 0 0 0 0;
+}
+
+nav{
+	width: 100%;
+	height: auto;
+
+	/*text-align: center;*/
+}
+nav ul {
+	width: 65%;
+	margin:0;
+	float: right;
+	text-align:right;
+	padding:0;
+	height: 55px;
+	margin: 20px 0 0 0;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	
+}
+
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	color: #ffffff;
+/*	background: #858080;*/
+	border-radius: 5px;
+	padding: 5px 20px 5px 20px;
+	font-family: roboto;
+	font-weight: bold;
+}
+
+nav ul li a:hover{
+	background: #156327;
+	color: #fff;
+	transition: all 0.5s ease-in-out;
+}
+
+.submenu{
+	position: relative;
+	line-height:2em;
+
+}
+
+.submenu .sub{
+	display: none;
+	position: absolute; 
+	border-radius: 2px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	/*min-width: -200px;
+*/}
+
+
+.submenu:hover .sub{
+	display: block;
+
+}
+
+
+/*.sub li {
+	color: #000;
+	text-decoration: none;
+	background: white;
+	padding: 5px 5px 5px 5px;
+	line-height: 1em;
+}
+
+.sub li hover{
+	background: black;
+	color: white;
+}
+*/
+   /*FOOTER*/
+.footer{
+   	width: 100%;
+   	height:auto;
+   	overflow: auto;
+    background-color: #1d1e20;
+    text-align: center;
+    margin: 0;
+}
+
+.foot ul li a{
+	color: #fff;
+}
+.foot ul li a:hover{
+	color: #930F12;
+}
+.foot{
+	width: 30%;
+	height:auto;
+	overflow:auto;
+	float: left;
+	margin:0 0 0 0;
+}
+
+.foot ul li{
+	font-family: roboto;
+	font-size : 14px;
+	color: #fff;
+	list-style: none;
+	line-height: 1.5em;
+}
+
+.foot h2{
+	color: #fff;
+	margin-left: 30px;
+}
+
+.Facebook i{
+	color: #3b5999;
+}
+/*#858080*/
+
+/*slider*/
+.slider h2{
+	margin: 0 0 0 0;
+	border-radius:3px;
+	/*border: 1px solid #e7e7e7;*/
+	width:28%;
+	/*text-align: center;*/
+	height: auto;
+	padding:10px 10px 10px 10px ;
+	color: #fff;
+	font-weight: lighter;
+	font-family: roboto;
+	background-color: rgba(0,0,0,0.5);
+
+}
+
+.slider {
+	/*height: 500px;*/
+	margin:  20px 20px 10px 20px;
+	position: relative;
+	/*background:url('../img/bumsol-index.jpg');*/
+	/*background-size: cover;*/
+	/*background-attachment: fixed;*/
+	/*background-position: bottom;*/
+}
+
+.aboutus{
+	background: #ffffff;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin: 30px 0 0 0;
+	text-align: center;
+	line-height: 2em;
+	border: solid #e7e7e7 1px;
+	padding: 0 0 10px 0
+	/*float: left;*/
+}
+
+.aboutus i {
+	font-size: 100px;
+	color:#253cad;
+}
+
+.aboutus h2{
+	color: #000000;
+	font-family: roboto;
+}
+
+.aboutus p{
+	width:60%;
+	margin: 0 auto;
+	color: #000000;
+	font-family: roboto;
+}
+.side{
+	width: 40%;
+	height:auto;
+	overflow:auto;
+	float: right;
+	margin:30px 0 30px 0;
+	/*background-color: #e7e7e7;*/
+}
+.e_n{
+	height:auto;
+	overflow:auto;
+	margin:0 0 0 40px;
+}
+
+	.event_pic{ height: auto; float: left;}
+	.event_details{height: auto; }
+
+.calendar{
+	height:auto;
+	overflow:auto;
+	margin:0 0 0 40px;
+}
+
+/*ABOUT*/
+
+.about_back{
+	text-align: center;
+	margin: 100%
+	height:auto;
+	overflow: auto;
+	margin: 50px 0 30px 0;
+	line-height: 2em;
+	font-family: roboto;
+}
+
+.about_founder{
+	 width: 100%;
+	 height: auto;
+	 overflow: auto;
+	 background: #ffffff;
+	 margin: 0 0 50px 0;
+}
+
+.fbox{
+	width: 30%;
+	height: auto;
+	float: left;
+	margin: 20px 0 10px 0;
+}
+
+.ftext{
+	width: 68%;
+	height: auto;
+	float: left;
+	margin:50px 1% 0 0 ;
+}
+
+.vision{
+	width: 49%;
+	height: auto;
+	overflow: auto;
+	float: left;
+	margin: 0 1% 0 0;
+	padding: 0 20px 0 20px;
+	border: solid #e7e7e7 1px;
+	background: #ffffff;
+	 color: #000000;
+	/*border-radius: 3px;*/
+}
+
+.vision i{
+font-size: 100px;
+	color:green;
+}
+.mission{
+	width: 49%;
+	height: auto;
+	overflow: auto;
+	float: left;
+	margin: 0 0 0 1%;
+	padding: 0 20px 0 20px;
+	border: solid #e7e7e7 1px;
+	background: #ffffff;
+	color: #000000;
+}
+
+.mission img{
+	width: 150px;
+	height: 100px;
+}
+
+.facilities{
+	width: 50%;
+	height: auto;
+	overflow: auto;
+	margin: 30px 25% 0 25%;
+	/*background-color: #e7e7e7;*/
+	border-radius: 5px;
+}
+
+/*.facilities ul li {
+	list-style: none;
+	text-align: justify;
+}*/
+.contact{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	background: grey;
+	padding: 0 0 0 2%;
+}
+
+ .email i {
+	color: #3b5998;
+}
+
+.pnum i{
+	color: #0b6119;
+}
+ .Location i {
+	color: #0b6119;
+}
+
+/*ACADEMICS*/
+.banner{
+	width: 80%;
+	height: auto;
+	overflow: auto;
+	/*background: url(../img/bumsol-banner.jpg);*/
+	background-size: cover;
+	background-attachment:fixed;
+	/*border-bottom: solid 10px #000;*/
+	margin: 0;
+/*	box-shadow: 5px 5px 5px 5px #e7e7e7;*/
+	margin: 0 auto;
+	/*z-index: 0.5;*/
+	/*margin: 20px 0 0 0;*/
+}
+
+.banner img{
+	width: 100%;
+}
+
+.academic_con{
+  	
+  	width: 100%;
+  	height: auto;
+  	overflow: auto;
+  	background: #ffffff;
+  	padding:  0 20px;
+  	border-radius: 0 20px 0 0;
+}
+
+.admission{
+	width:58%;
+	height: auto;
+	overflow:auto;
+	/*background: ;*/
+	margin: 50px 2% 20px 0;
+	border-radius: 5px;
+	float: left;
+}
+.admission h2{
+	/*background: rgba(0, 0 , 0 ,0.7);
+	border-radius: 5px;*/
+	/*width: 30%;*/
+	color: #000000;
+	text-align: center;
+	/*padding: 5px 0 5px 0;*/
+}
+.admission p{
+	text-align: center;
+	padding: 0 10px  0 10px;
+}
+
+.admission h2 i{
+	color: #253cad;
+}
+
+.curriculum{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin: 30px 0 0 0;
+	/*padding:  300px 0 0 0;*/
+}
+
+.curriculum h2{
+	/*background: rgba(0, 0 , 0 ,0.5);
+	border-radius: 5px;*/
+	/*width: 30%;*/
+	color: #000000;
+	text-align: left;
+	/*padding: 10px 10px 10px 10px;*/
+}
+
+.curriculum h2 i{
+	color: #ce681e;
+}
+.box{
+	width: 30%; /*lets have two percent to play with*/
+	height: auto;
+	overflow:auto;
+	background: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	float: left;
+	margin: 0 0 0 30px;
+	padding: 0 15px 0 15px;
+	box-shadow: 2px 2px 2px  #010101;
+}
+
+.box h3{
+	color: #fff;
+	font-family: roboto;
+	font-size: 20px;
+}
+.box p{
+	color: #fff;
+	font-family:roboto;
+	font-size: 14px;
+}
+
+/*GALLERY*/
+
+.filter{
+	width: 100%;
+	height:100px;
+	overflow: auto;/*
+	display: inline;*/
+	margin: 60px 0 10px 0;
+
+	}
+
+.filter button{
+	height: 30px;
+	/*text-decoration: none;*/
+	color: #156226;
+	background: #e7e7e7;
+	padding: 3px 10px 3px 10px;
+	border-radius: 5px;
+	/*box-shadow: 1px;*/
+}
+
+.filter button:hover{
+	color: #e7e7e7;
+	background: #156226;
+	transition: 0.5s all ease-in-out;
+}
+.gallery{
+	width: 100%;
+	height: auto;
+	overflow:auto;
+	margin: 5px 0 0 0;
+	padding: 0 0 0 0 ;
+}
+.gallerybox img{
+	width: 100%;
+	border-radius: 5px;
+}
+
+/*.gallerybox img:hover{
+	color: rgba(191,201,193,0.5);
+}*/
+
+.gallerybox{
+	width:24%;
+	height: auto;
+	float: left;
+	margin: 0 0.5% 0 0.5%;
+	padding: 0 0 0 0;
+}
+/*.gallerybox a{
+	text-decoration: none;
+	text-align: center;
+}*/
+
+/*.showmore{
+	background: #7c1818;
+	padding: 5px 0 5px 0;
+	width: 100px;
+	border-radius: 3px;
+	height: auto;
+	text-align: center;
+	margin: 20px auto 20px auto;
+}
+*/
+.showmore a{
+	text-decoration: none;
+}
+
+.showmore a i{
+	font-size: 70px;
+	color: #ce681e;
+}
+
+.showmore a:hover i{
+	color: #222422;
+	transition: 0.5s all ease-in-out;
+}
+
+.heading{
+	font-family: roboto;
+	font-size: 24px;
+	color: #222422;
+}
+
+  			/*	RESPONSIVENESS*/
+@media screen and (max-width: 900px){
+	.vision{
+		width: 100%;
+		height: auto;
+		overflow: auto;
+		text-align: center;
+		/*float: left;*/
+		margin: 0 auto;
+		padding: 0 auto;
+		
+	}
+
+	.mission{
+		width: 100%;
+		height: auto;
+		overflow: auto;
+		/*float: left;*/
+		margin: 20px auto;
+	}
+
+	.vision p{
+		margin: 0 auto;
+		width: 60%;
+	}
+
+	.mission p{
+		margin: 20px auto;
+		width: 60%;
+	}
+
+	.banner{
+		height: auto;
+	}
+
+	.admission{
+		width:78%;
+		height: auto;
+		overflow:auto;
+		background: ;
+		margin: 20px 2% 20px 0;
+		border-radius: 5px;
+		float: left;
+	}
+	.admission h2{
+		background: rgba(0, 0 , 0 ,0.7);
+		border-radius: 5px;
+		width: 30%;
+		color: #fff;
+		text-align: center;
+		padding: 5px 0 5px 0;
+	}
+	.admission p{
+		text-align: center;
+		padding: 0 10px  0 10px;
+	}
+
+	.admission h2 i{
+		color: #2dd1e9;
+	}
+
+	.box{
+		width: 28%;
+		padding: 0 15px 0 15px;
+	}
+
+
+}
+
+@media screen and (max-width: 500px){
+
+	.header{
+		height: 300px;
+	}
+	
+	.header h2{
+		margin-left: 20px;
+	}
+	.logo{
+		float:none;
+		text-align:center;
+	}
+
+	nav ul {
+		width: 100%;
+		float: none;
+		text-align:center;
+	}
+	
+	.admission h2{
+		width: 40%;
+	}
+
+	.curriculum h2{
+		width: 50%;
+	}
+
+}
+
+@media screen and (max-width: 810px){
+
+	.admission{
+
+		width:100%;
+		float: none;
+	}
+
+	.box{
+		width: 60%; /*lets have two percent to play with*/
+		text-align: center;
+		float: none;
+		margin: 20px auto;
+	}
+
+	.side{
+		width: 80%;
+		float: none;
+		margin:10px auto;
+		/*background-color: #e7e7e7;*/
+		padding: 0;
+	}
+
+	.e_n{
+		height:auto;
+		overflow:auto;
+		margin:0 0 0 40px;
+		padding: 0;
+	}
+
+	.event_pic{ height: auto; float: none;}
+	.event_details{height: auto; float: none;}
+
+	.calendar{
+		height:auto;
+		overflow:auto;
+		margin:0 0 0 40px;
+	}
+
+	.gallerybox{
+		width:47%;
+		margin: 0 2% 0 1%;
+		/*float: none;*/
+	}
+
+	
+}
+
+@media screen and (max-width: 544px){
+
+	.header{
+		height: 250px;
+	}
+
+	.foot{
+		width: 100%;
+		height:auto;
+		overflow:auto;
+		float: none;
+		margin:0 0 0 0;
+	}
+	.foot h2{
+		margin-left: 0;
+	}
+
+	.foot ul{
+		padding-left: 0;
+	}
+
+	.gallerybox{
+		width:96%;
+		margin: 10px  2%  10px  2%;
+		float: none;
+	}
+}
+
+@media screen and (max-width: 1200px){
+
+	.filter{
+		width: 90%;
+		height:100px;
+		overflow: auto;/*
+		display: inline;*/
+		margin: 60px 0 0 10%;
+
+	}
+
+}
+
+@media screen and (max-width: 449px){
+	.box{
+		width: 80%; /*lets have two percent to play with*/
+	}
+
+	.header{
+		height: 230px;
+	}
+}

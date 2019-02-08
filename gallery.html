@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>-Bumsol</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta charset="utf-8" name="viewport" content="width=device-width" intial-scale="1.0">
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<!-- menu -->
+		<div class="menu">
+			<nav>
+				<!-- logo -->
+				<div class="logo">
+					<img src="img/bumsol-logo2.png">
+		      	</div>
+		      	<h2 style="text-align: left;">BUMSOL NURSERY AND PRIMARY SCHOOL</h2>
+				<ul>
+					<li><a href="index.html">Home </a></li> |
+					<li class="submenu"><a href="academics.html">Academics</a> |
+						<!-- <ul class="sub">
+							<li><a href="">Admission</a></li>
+							<li><a href="">Curriculum</a></li>
+						</ul> -->
+					</li>
+					<li><a href="gallery.html">Gallery</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="filter">
+			<h2 class="heading">Filter gallery</h2>
+			<button onclick="filter('excursion');">Excursion</button>
+			<button onclick="filter('sports');">Sports</button>
+			<button onclick="filter('school');">Academics</button>
+			<button  onclick="filter()">All</button>
+		</div>
+		<div class="gallery" >
+			<div class="gallerybox">
+				<a href="img/bumsol-index.jpg"><img src="img/bumsol-index.jpg" class="school" ></a>
+				<!-- <a href="">Viewbigger</a> -->
+			</div>
+			<div class="gallerybox">
+				<a href="img/zoo.jpg" ><img src="img/zoo.jpg" class="ex" >
+				<!-- <a href=""><img src="" alt="view bigger"></a> -->
+			</div>
+			<div class="gallerybox">
+				<a href="img/school.jpg" ><img src="img/school.jpg" class="school">
+				<!-- <a href=""><img src="" alt="view bigger"></a> -->
+			</div>
+			<div class="gallerybox">
+				<a href="img/kids.jpg"><img src="img/kids.jpg" class="sports">
+				<!-- <a href=""><img src="" alt="view bigger"></a> -->
+			</div>
+
+		</div>
+		
+	</div>
+	<!-- <div class="showmore">
+			<center><a href="#"><i class="material-icons">add_circle</i></a></center>
+				<!-- <a href=""><i class="fa fa-plus"></i></a> 
+	</div> -->
+	 <!-- footer -->
+	<div class="footer">
+		<div class="foot">
+			<h2>Quick Links</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="academics.html">Admission</a></li>
+				<li><a href="index.html">About us</a></li>
+				<li><a href="academics.html">Curiculum</a></li>
+				<!-- <li><a href="#">FAQs</a></li> -->
+			</ul>
+		</div>
+		<div class="foot">
+			<h2>Social Media</h2>
+			<ul>
+				<li>Follow us on facebook</li>
+				<li class="Facebook"><a href="https://www.Facebook.com"><i class="fa fa-facebook"></i> Facebook</a></li>
+				<!-- <li><a href="https://www.Instagram.com"><i class="fa fa-instagram"></i> Instagram</a></li> -->
+			</ul>
+		</div>
+		<div class="foot">
+			<h2>Contact</h2>
+			<ul>
+				<!-- <li class="email"><i class="fa fa-envelope"></i> Email: </li> -->
+				<li class="pnum"><i class="fa fa-phone"></i> 08033487562 , 0802310498 </li>
+				<li class="Location"><i class="fa fa-map-marker"></i> Aba-emu area, akanran road, Ibadan.</li>
+			</ul>
+		</div>
+	</div>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+	
+	function filter(val){
+		 
+		if (val == "excursion") {
+			// window.alert(val);
+			// $('#y').hide();
+			// document.getElementById('ex').style.display = 'inline';
+			// document.getElementById('school').style.display = 'none';
+			// document.getElementById('sports').style.display = 'none';
+			// document.getElementById('school1').style.display = 'none';
+
+			$(".ex").show();
+			$(".school").hide();
+			$(".sports").hide();
+		}else if (val == "sports") {
+			// window.alert(val);
+			// document.getElementById('sports').style.display = 'inline';
+			// document.getElementById('ex').style.display = 'none';
+			// document.getElementById('school').style.display= 'none';
+			// document.getElementById('school1').style.display = 'none';
+			$(".ex").hide();
+			$(".school").hide();
+			$(".sports").show();
+		}else if(val == "school"){
+			// window.alert(val);
+			// document.getElementById('school').style.display = 'inline';
+			// document.getElementById('ex').style.display= 'none';
+			// document.getElementById('sports').style.display= 'none';
+			// document.getElementById('school1').style.display = 'inline';
+			$(".ex").hide();
+			$(".school").show();
+			$(".sports").hide();
+		}else{
+			// document.getElementById('ex').style.display= 'inline';
+			// document.getElementById('school').style.display = 'inline';
+			// document.getElementById('sports').style.display= 'inline';
+			// document.getElementById('school1').style.display = 'inline';
+			$(".ex").show();
+			$(".school").show();
+			$(".sports").show();
+		}
+ }
+</script>
+	
+</body>
+</html>
